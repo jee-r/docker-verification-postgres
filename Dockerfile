@@ -5,13 +5,13 @@
 # a FROM built from an ARG cannot be tracked.
 ARG PG_MAJOR=17
 
-FROM docker.io/databasus/verification-postgres:12@sha256:039bb3a7acec997092236635ac2124db279ff8c899db8b131e82977f2ac3b3bb AS base-12
-FROM docker.io/databasus/verification-postgres:13@sha256:f1eb6fea40ec949cb2cc57bc6b4fdefaa9400b92265a798ba187b0c046c6a810 AS base-13
-FROM docker.io/databasus/verification-postgres:14@sha256:e985c363628c9019fff6f9d36c49a2210fe11c3f28e19a7a7a75ccedafc70991 AS base-14
-FROM docker.io/databasus/verification-postgres:15@sha256:6f226b50199b825f95b75a8b11804542b1e3a6d605823493de7b40de75a01400 AS base-15
-FROM docker.io/databasus/verification-postgres:16@sha256:12e1696de074287f10170f56816d6a6b5ac77fb6f6db3e2a630d1afcfb797909 AS base-16
-FROM docker.io/databasus/verification-postgres:17@sha256:75d17e4f9d89b52342c85c65924efe006b2c15475eab2de951c942822cb9ab43 AS base-17
-FROM docker.io/databasus/verification-postgres:18@sha256:18d025a0e3679b631b1e3acb47c8b031f4c6389aa214e0b70fed7a0f523daa41 AS base-18
+FROM docker.io/databasus/verification-postgres:12@sha256:8d9ea4cdb288133bfdeea8d324e5c943e4fa664534467ba99e98499a0f2d88aa AS base-12
+FROM docker.io/databasus/verification-postgres:13@sha256:8c6f3b4c1624891dc667f5a2f18180eefd8af09136e67d212c5d150a15e0d260 AS base-13
+FROM docker.io/databasus/verification-postgres:14@sha256:eba709b356e0e25184941d9fb50f553220c4f4a637f952de4ed92392f3157aeb AS base-14
+FROM docker.io/databasus/verification-postgres:15@sha256:3d70e676d08e289abfa3f28486d04aa9d043fa581ca9bbcdd75cedf905687ed5 AS base-15
+FROM docker.io/databasus/verification-postgres:16@sha256:b4944239121acf33763b93154e20c5993830db43a852915908b13b4d86793037 AS base-16
+FROM docker.io/databasus/verification-postgres:17@sha256:b53779ee2b51719d7cc71000e6739e2f9a68581075fb0921b0545db21d81b5d5 AS base-17
+FROM docker.io/databasus/verification-postgres:18@sha256:e336594d54cb1d7d760ec8b8e575f5ffb0c37dbb295f80df1058e16804273507 AS base-18
 
 FROM base-${PG_MAJOR}
 
